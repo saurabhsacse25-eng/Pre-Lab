@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title.My Resume</title>
+        </head>
+        <body>
+            <h1 align="center">My Resume</h1>
+            <center>
+                <img src="profile image" alt="My profile photo" width="150" height="150">
+            </center>
+            <h2>Presonal Information</h2>
+            <ul>
+                <li><b>Name:</b> Saurabh Satphale</li>
+                <li><b>Email:</b> Saurabh@gmail.com</li>
+                <li><b>Phone:</b> 9876543210</li>
+                <li><b>Location:</b> Nagpur,Maharastra, India</li>
+            </ul>
+            <h2>Career Objective</h2>
+            <p>
+                to obtain a challenging position where I can use my skills and knowledge for the growth of the organization and my career.
+            </p>
+
+            <h2>Education Qualification</h2>
+            <table Border="1" width="60%">
+                <tr>
+                    <th>Course</th>
+                    <th>Collage</th>
+                    <th>Year</th>
+                    <th>Percentage</th>
+                </tr>
+                <tr>
+                    <td>Diploma in Computer Engineering</td>
+                    <td>ABC Polytechnic</td>
+                    <td>2024</td>
+                    <td>75%</td>
+                </tr>
+                <td>SSC</td>
+                <td>XYZ School</td>
+                <td>2022</td>
+                <td>80%</td>
+            </table>
+            
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>C++ Programming</li>
+                <li>Basic Web Development</li>
+                <li>Computer Networking</li>
+            </ul>
+
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Gaming</li>
+                <li>Learning Technology</li>
+                <li>Watching Tutorials</li>
+            </ul>
+
+            <h2>Links</h2>
+            <p>
+                Visit My Linkdin Account
+                <a href=""https://www.linkdin.com"></a>
+            </p>
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
