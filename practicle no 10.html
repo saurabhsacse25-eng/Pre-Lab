@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Frames & Iframe Demo</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 90vh;
+}
+
+/* Left Menu */
+.menu {
+    width: 25%;
+    background: #f3e5f5;
+    padding: 20px;
+}
+
+.menu a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background: #ba68c8;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background: #8e24aa;
+}
+
+/* Right Frame */
+.content {
+    width: 75%;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Saurabh S. Satphale | USN: CS25173</h2>
+    <p>HTML Frames / Iframe Demo</p>
+</header>
+
+<div class="container">
+
+    <!-- Left Navigation -->
+    <div class="menu">
+        <a href="https://www.wikipedia.org" target="frame">Open Wikipedia</a>
+        <a href="https://www.w3schools.com" target="frame">Open W3Schools</a>
+
+        <!-- Google Map -->
+        <a href="https://maps.google.com/maps?q=Nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed" target="frame">
+            Show Nagpur Map
+        </a>
+    </div>
+
+    <!-- Right Frame -->
+    <div class="content">
+        <iframe name="frame" src="https://www.wikipedia.org"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
