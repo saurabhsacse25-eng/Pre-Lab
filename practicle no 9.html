@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Creative Webpage</title>
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #d16ba5, #c777b9, #ba83ca);
+    color: white;
+}
+
+.header h1 {
+    margin: 10px 0;
+}
+
+.header p {
+    margin: 5px;
+}
+
+/* Cards Section */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+    background: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card i {
+    font-size: 30px;
+    color: purple;
+    margin-bottom: 10px;
+}
+
+/* Hover effect */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>My Creative Webpage</h1>
+    <h2>Saurabh S. Satphale</h2>
+    <h3>CS25173</h3>
+    <p>Simple & Different Design</p>
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <i class="fas fa-book"></i>
+        <h3>Study</h3>
+        <p>Learning new things daily.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-music"></i>
+        <h3>Music</h3>
+        <p>Enjoy your favorite songs.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-gamepad"></i>
+        <h3>Games</h3>
+        <p>Fun and entertainment.</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-plane"></i>
+        <h3>Travel</h3>
+        <p>Explore new places.</p>
+    </div>
+
+</div>
+
+</body>
+</html>
